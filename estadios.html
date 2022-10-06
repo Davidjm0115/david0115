@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta author="David Jurado Maldonado" description="pagina sobre el mundial de qatar 2022">
+    <link rel="icon" href="./img/qatars.ico"></link>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="stles.css">
+<!-- JavaScript Bundle with Popper -->
+    <script src="./js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+    <title>Qatar 2022</title>
+  </head>
+  <body>
+    <div id ="logo">
+        <img src="./img/qatars.png" id="qatar" >
+        <img src="./img/qatar.png" id="qatar" >
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Nav</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ESTADIOS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <table class="table" id="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Ciudad</th>
+      <th scope="col">Capacidad</th>
+      <th scope="col">Ver informacion detallada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Estadio 974</td>
+      <td>Doha</td>
+      <td>40.000 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(1)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Estadio Áhmad bin Ali</td>
+      <td>Rayan</td>
+      <td>60.000 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(2)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Estadio Al Bayt</td>
+      <td>Jor</td>
+      <td>60.000 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(3)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Estadio Al Janoub</td>
+      <td> Al Wakrah</td>
+      <td>40.000 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(4)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Estadio Al Thumama </td>
+      <td>Doha</td>
+      <td>40.000 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(5)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Estadio Ciudad de la Educación </td>
+      <td>Rayán</td>
+      <td>40.000 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(6)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Estadio Icónico de Lusail </td>
+      <td>Lusail</td>
+      <td>80.000 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(7)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Estadio Al Thumama </td>
+      <td>Doha</td>
+      <td>45 416 espectadores</td>
+      <td><button type="button" name="button"  class="btn btn-dark" onclick="estadios(8)">Pulsa para ver informacion detellada</button></td>
+    </tr>
+  </tbody>
+</table>
+  </body>
+
+  <script>
+    $(document).ready(function () {
+    $('#table').DataTable();
+});
+
+Devexpress;
+</script>
+</html>
